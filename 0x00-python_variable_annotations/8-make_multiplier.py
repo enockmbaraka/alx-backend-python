@@ -1,13 +1,10 @@
-#!/usr/bin/python3
-""" Module documentation """
+#!/usr/bin/env python3
+'''Task 8: Complex types - functions
+'''
 from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """Func doc"""
-
-    def mult(m: float) -> float:
-        """Func doc"""
-        return m * multiplier
-
-    return mult
+    '''Creates a multiplier function.
+    '''
+    return lambda x: x * multiplier
